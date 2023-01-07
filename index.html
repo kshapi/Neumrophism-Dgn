@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<body>
+  <div class="main">
+    
+    <div class="pro">
+      <div class="img">
+        <img src="me.jpg" alt="">
+      </div>
+    </div>
+    
+      <div class="text">
+        <span>9_Kshapi</span>
+      </div>
+     <ul>
+       <li>
+     <i class="bi bi-instagram"></i>
+       </li>
+       <li>
+      <i class="bi bi-facebook"></i>
+       </li>
+       <li>
+       <i class="bi bi-twitter"></i>
+       </li>
+      <li>
+        <i class="bi bi-tiktok"></i>
+      </li>
+    </ul>
+  
+  </div>
+<script>
+  
+  let list = document.querySelectorAll('li');
+  
+  list.forEach((li) => {
+    li.addEventListener('click', function() {
+      list.forEach((li) => {
+     li.classList.remove('active');
+     });
+      li.classList.add('active');
+    })
+  });
+  
+</script>
+</body>
+
+</html>
